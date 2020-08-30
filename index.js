@@ -1,9 +1,5 @@
-import CashierCheck from "./src/CashierCheck";
+import React from "react";
+import ReactDom from "react-dom";
+import Contaner from "./src/component/Contaner/Container";
 
-let check = new CashierCheck();
-check.setProducts("картофель", 2);
-check.setProducts("морковь", 2);
-check.setProducts("каша", 2);
-check.setProducts("молоко", 2);
-
-console.log(check);
+ReactDom.render(<Contaner />, document.getElementById("root"));
